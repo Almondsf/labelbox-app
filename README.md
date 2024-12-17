@@ -31,10 +31,7 @@ Features
 
 Technologies Used 
 - Backend: Django (with Django REST Framework) 
-- Database: SQL (or MongoDB) - for storing annotation tasks and data. 
-- Frontend: HTML, CSS, JavaScript (with possible integration of front-end frameworks like React or Angular if used) 
-- Cloud Hosting: (e.g., AWS, Heroku, DigitalOcean) 
-- Others: Docker (if used for containerization), Gunicorn, Nginx 
+- Database: SQL - for storing annotation tasks and data. 
 
 Installation 
 
@@ -99,8 +96,7 @@ http://127.0.0.1:8000
 ### API Endpoints
 - **GET /api/images/**: Fetch images from the database for annotation.
 - **POST /api/annotations/**: Submit annotated data back into the database.
-- **GET /api/tasks/**: Retrieve all annotation tasks.
-- **POST /api/tasks/**: Create new annotation tasks.
+
 
 ## Contributing
 
