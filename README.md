@@ -1,7 +1,18 @@
+
+
 Labelbox Web App 
 
 Labelbox is a web application that enables efficient and scalable data annotation tasks, specifically for image annotation. The project is designed to ensure that all annotation projects/tasks are stored in a database, and that annotated data is processed and stored without any dependency on local device storage. 
 
+## Table of Contents
+- [Description](#description)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Endpoints](#api-endpoints)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Description
 
