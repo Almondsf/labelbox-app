@@ -12,13 +12,12 @@ class Image(models.Model):
 
 
 class Annotation(models.Model):
-    # Table to store annotations for each image.
     image = models.ForeignKey(Image, on_delete=models.CASCADE, related_name='annotations')
-    label = models.CharField(max_length=100)  # e.g., 'Car', 'Person', 'Dog', etc.
-    x_min = models.FloatField()
-    y_min = models.FloatField()
-    x_max = models.FloatField()
-    y_max = models.FloatField()
+    label = models.CharField(max_length=100)  # 'text' in the frontend data
+    x = models.FloatField(null=True)  # x-coordinate from geometry
+    y = models.FloatField(null=True)  # y-coordinate from geometry
+    width = models.FloatField(null=True)  # width from geometry
+    height = models.FloatField(null=True)  # height from geometry
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

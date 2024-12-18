@@ -12,4 +12,4 @@ class AnnotationSerializer(serializers.ModelSerializer):
     # Serializer for the Annotation model.
     class Meta:
         model = Annotation
-        fields = ['id', 'image', 'label', 'x_min', 'y_min', 'x_max', 'y_max', 'created_at']
+        fields = ['id', 'image', 'label', 'x', 'y', 'width', 'height', 'created_at']
